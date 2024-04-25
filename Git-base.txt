@@ -1,0 +1,74 @@
+Git-base:
+cd /d D:\
+cd Git
+cd Git-base
+git init
+touch index.html, scripts.js, style.css
+git status
+explorer
+echo "Git-base">file.txt
+touch app.py
+git add app.py
+git commit -m "app.py létrehozva"
+git show
+ Directory of D:\Git\Git-base\.git
+
+2024. 04. 21.  11:32    <DIR>          ..
+2024. 04. 23.  18:52                24 COMMIT_EDITMSG
+2024. 04. 24.  13:43               242 config
+2024. 04. 20.  17:06                73 description
+2024. 04. 20.  17:06                23 HEAD
+2024. 04. 20.  17:06    <DIR>          hooks
+2024. 04. 23.  18:52               585 index
+2024. 04. 20.  17:06    <DIR>          info
+2024. 04. 20.  17:52    <DIR>          logs
+2024. 04. 23.  18:52    <DIR>          objects
+2024. 04. 21.  11:47    <DIR>          refs
+               5 File(s)            947 bytes
+               6 Dir(s)  274 012 708 864 bytes free
+
+start .git
+
+//ez a file.txt a commit azonosítója
+git show  (4d86100a1a70d777bc160f143f1afa8fed2ce052)
+
+
+touch style2.css
+git add style2.css
+git commit -m "style2.css létrehozva"
+git rm style2.css  (*.txt stb).
+git status
+(deleted: style2.css)
+
+diff --git a/file.txt b/file.txt
+new file mode 100644
+index 0000000..1cae3fd
+--- /dev/null
++++ b/file.txt
+@@ -0,0 +1 @@
++"Git-baese"
+
+git config --global --list
+touch README.MD
+git add README.md
+git commit -m "README.md fájl létrehozva"
+
+touch index.py
+git add index.py
+git commit -m "index.py létrehozva"
+git mv index.py main.py
+git add main.py
+git commit -m "index.py átnevezve main.py-ra"
+
+
+touch .gitignore
+git add .gitignore
+git commit -m ".gitignore létrehozva"
+git push origin 
+
+
+
+
+
+
+
